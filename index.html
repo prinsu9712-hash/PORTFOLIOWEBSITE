@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prince Ravat | Portfolio</title>
+  <meta
+    name="description"
+    content="Prince Ravat - BCA Honours student focused on software and web development."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <input
+    type="checkbox"
+    id="theme-toggle"
+    class="theme-toggle-input"
+    aria-label="Enable dark mode"
+  />
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">PR</span>
+        <span>
+          <span class="brand-name">Prince Ravat</span>
+          <span class="brand-role">BCA Honours Student</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <label class="theme-switch" for="theme-toggle">
+          <span class="theme-light-text">Light</span>
+          <span class="theme-dark-text">Dark</span>
+        </label>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-list"
+          >
+            Menu
+          </button>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"> Web developer</p>
+          <h1> I am Prince Ravat</h1>
+          <p class="lead">
+             A BCA Honours student from Vadodara with a
+            growing focus on web development, software projects, and
+            problem-solving through practical work.
+          </p>
+
+          <div class="hero-actions">
+            <a href="Prince_Ravat_Web_Developer_Resume.docx" class="btn" download>
+              Download Resume
+            </a>
+            <a href="#contacts" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <ul class="hero-points">
+            <li>Focused on frontend, backend, and clean UI.</li>
+            <li>Comfortable with C, C++, Python, PHP, and JavaScript.</li>
+            <li>Open to internships and project opportunities.</li>
+          </ul>
+        </div>
+
+        <aside class="profile-card">
+          <div class="profile-image-wrap">
+            <img src="profile.jpg" alt="Portrait of Prince Ravat" class="profile-image" />
+          </div>
+
+          <div class="profile-copy">
+            <p class="profile-label">Current focus</p>
+            <h2>Learning by building practical projects.</h2>
+            <p>
+              I enjoy creating responsive pages, improving design clarity, and
+              writing code that stays easy to read and maintain.
+            </p>
+
+            <div class="mini-stats">
+              <div class="stat-card">
+                <strong>10+</strong>
+                <span>Core skills</span>
+              </div>
+              <div class="stat-card">
+                <strong>BCA</strong>
+                <span>Honours student</span>
+              </div>
+              <div class="stat-card">
+                <strong>2026</strong>
+                <span>Building portfolio work</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>Academic background</h2>
+        </div>
+
+        <div class="info-panel">
+          <div>
+            <p class="panel-kicker">University</p>
+            <h3>Maharaja Sayajirao University, Vadodara</h3>
+            <p>Bachelor of Computer Applications (Honours)</p>
+          </div>
+
+          <div class="tag-group" aria-label="Education highlights">
+            <span class="tag">Web Development</span>
+            <span class="tag">Programming</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I work with</h2>
+        </div>
+
+        <div class="skills-grid" role="list">
+          <article class="skill-card" role="listitem">
+            <img src="C.webp" alt="C logo" />
+            <h3>C</h3>
+            <p>Strong programming basics and logic building.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="CPP.webp" alt="C++ logo" />
+            <h3>C++</h3>
+            <p>Academic projects and structured coding practice.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="CSharp.webp" alt="C sharp logo" />
+            <h3>C#</h3>
+            <p>Object-oriented programming fundamentals.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="HTML.webp" alt="HTML logo" />
+            <h3>HTML</h3>
+            <p>Semantic page structure and clean layouts.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="CSS.webp" alt="CSS logo" />
+            <h3>CSS</h3>
+            <p>Responsive styling, spacing, and visual polish.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="Javascript.webp" alt="JavaScript logo" />
+            <h3>JavaScript</h3>
+            <p>Interactive front-end behavior and UI logic.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="Python.webp" alt="Python logo" />
+            <h3>Python</h3>
+            <p>General scripting, logic, and problem solving.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="PHP.webp" alt="PHP and MySQL logo" />
+            <h3>PHP and MySQL</h3>
+            <p>Basic full-stack work with data handling.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="dsa.webp" alt="Data structures logo" />
+            <h3>DSA</h3>
+            <p>Improving efficiency and problem-solving approach.</p>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <img src="Cybersecurity.webp" alt="Cybersecurity logo" />
+            <h3>Cybersecurity</h3>
+            <p>Introductory knowledge of secure systems and concepts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>How I can help</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="simple-card">
+            <h3>Portfolio Websites</h3>
+            <p>Simple, responsive websites with a clear and modern presentation.</p>
+          </article>
+
+          <article class="simple-card">
+            <h3>Academic Projects</h3>
+            <p>Support for student projects using C, C++, Python, and web tools.</p>
+          </article>
+
+          <article class="simple-card">
+            <h3>Frontend Improvements</h3>
+            <p>Cleaner layouts, better spacing, and more attractive visual design.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Current stage</h2>
+        </div>
+
+        <div class="info-panel">
+          <div>
+            <p class="panel-kicker">Practical learning</p>
+            <h3>Building skills through personal and academic work.</h3>
+            <p>
+              I am currently strengthening my portfolio by working on web pages,
+              coding practice, and project-based learning to gain stronger
+              hands-on experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <div class="contact-banner">
+          <div class="section-heading section-heading-light">
+            <p class="eyebrow">Contact</p>
+            <h2>Let us build something useful.</h2>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="tel:+919328827881">
+              <span class="contact-label">Phone</span>
+              <strong>+91 93288 27881</strong>
+              <p>Available for calls and messages.</p>
+            </a>
+
+            <a class="contact-card" href="mailto:Prince507322@gmail.com">
+              <span class="contact-label">Email</span>
+              <strong>Prince507322@gmail.com</strong>
+              <p>Best for project and internship discussions.</p>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/in/prince-ravat-2b8049378/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="contact-label">LinkedIn</span>
+              <strong>Connect with me</strong>
+              <p>See my profile and professional updates.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Prince Ravat. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const yearNode = document.getElementById("year");
+    const toggle = document.querySelector(".nav-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    if (yearNode) {
+      yearNode.textContent = new Date().getFullYear();
+    }
+
+    if (toggle && navList) {
+      toggle.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navList.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  </script>
+</body>
+</html>
