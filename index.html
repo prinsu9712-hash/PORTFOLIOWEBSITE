@@ -128,7 +128,11 @@
           <h2>Academic background</h2>
         </div>
 
-        <div class="info-panel"> K,
+        <div class="info-panel"> 
+    <h3>BCA Honours</h3>
+    <p>The Maharaja Sayajirao University, Vadodara</p>
+    <p>2023 – 2027</p>
+  
             <span class="tag">Programming</span>
             <span class="tag">Problem Solving</span>
           </div>
@@ -262,29 +266,79 @@
             <h2>Let us build something useful.</h2>
           </div>
 
-          <div class="contact-grid">
-            <a class="contact-card" href="tel:+919328827881">
-              <span class="contact-label">Phone</span>
-              <strong>+91 93288 27881</strong>
-              <p>Available for calls and messages.</p>
-            </a>
+          <div class="contact-layout">
+            <form id="contactForm" class="contact-form" novalidate>
+              <h3>Contact Me</h3>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  autocomplete="name"
+                  aria-describedby="name-error"
+                  required
+                />
+                <p class="form-error" id="name-error" aria-live="polite"></p>
+              </div>
 
-            <a class="contact-card" href="mailto:Prince507322@gmail.com">
-              <span class="contact-label">Email</span>
-              <strong>Prince507322@gmail.com</strong>
-              <p>Best for project and internship discussions.</p>
-            </a>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  aria-describedby="email-error"
+                  required
+                />
+                <p class="form-error" id="email-error" aria-live="polite"></p>
+              </div>
 
-            <a
-              class="contact-card"
-              href="https://www.linkedin.com/in/prince-ravat-2b8049378/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="contact-label">LinkedIn</span>
-              <strong>Connect with me</strong>
-              <p>See my profile and professional updates.</p>
-            </a>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                  aria-describedby="message-error"
+                  required
+                ></textarea>
+                <p class="form-error" id="message-error" aria-live="polite"></p>
+              </div>
+
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+              <button type="submit" class="btn contact-submit">Send</button>
+            </form>
+
+            <div class="contact-grid">
+              <a class="contact-card" href="tel:+919328827881">
+                <span class="contact-label">Phone</span>
+                <strong>+91 93288 27881</strong>
+                <p>Available for calls and messages.</p>
+              </a>
+
+              <a class="contact-card" href="mailto:Prince507322@gmail.com">
+                <span class="contact-label">Email</span>
+                <strong>Prince507322
+                  @gmail.com</strong>
+                <p>Best for project and internship discussions.</p>
+              </a>
+
+              <a
+                class="contact-card"
+                href="https://www.linkedin.com/in/prince-ravat-2b8049378/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="contact-label">LinkedIn</span>
+                <strong>Connect with me</strong>
+                <p>See my profile and professional updates.</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -295,28 +349,6 @@
     <p>&copy; <span id="year"></span> Prince Ravat. All rights reserved.</p>
   </footer>
 
-  <script>
-    const yearNode = document.getElementById("year");
-    const toggle = document.querySelector(".nav-toggle");
-    const navList = document.querySelector(".nav-list");
-
-    if (yearNode) {
-      yearNode.textContent = new Date().getFullYear();
-    }
-
-    if (toggle && navList) {
-      toggle.addEventListener("click", () => {
-        const isOpen = navList.classList.toggle("open");
-        toggle.setAttribute("aria-expanded", String(isOpen));
-      });
-
-      navList.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navList.classList.remove("open");
-          toggle.setAttribute("aria-expanded", "false");
-        });
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
